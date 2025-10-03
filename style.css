@@ -1,0 +1,196 @@
+
+/* Allgemein */
+html {
+  scroll-behavior: smooth;
+  
+}
+*{
+  text-decoration: none;
+}
+body {
+  font-family: Franklin Gothic, sans-serif;
+  margin: 0;
+  color: #222;
+  background: linear-gradient(180deg, rgb(0, 183, 255), rgb(0, 126, 176));
+  
+}
+
+/* Navbar */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: linear-gradient(180deg, rgb(0, 183, 255), rgb(0, 126, 176));
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  gap: 20px;
+  z-index: 1000;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+}
+
+#navbar a:hover {
+  color: #fff;
+  background: linear-gradient(180deg,rgb(83, 83, 83), rgb(39, 39, 39));;
+  padding: 5px;
+  border-radius: 5px;
+  transition: color 0.3s ease;
+}
+
+/* Begrüßungsbereich */
+#welcome-section{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(145deg,rgb(83, 83, 83), rgb(39, 39, 39));
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+  
+}
+
+  #Name{
+    color:rgb(0, 183, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 5px 5px 10px rgb(49, 49, 49);
+  }
+    
+
+  #Name:hover{
+    color:rgb(0, 183, 255);
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+  }
+
+  #untertitel{
+    color: rgb(0, 162, 255);
+    font-size: 2.4rem;
+  }
+
+/* Projekte */
+#projects {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  text-align: center;
+  
+  
+}
+
+.project-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: black;
+  
+}
+
+#projects h2{
+  color:rgb(253, 253, 253);
+  font-size: 2rem;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+.project-tile {
+  position: relative;
+  flex: 0 0 600px;
+  min-height: 180px;
+  background: rgb(234, 234, 234);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  cursor: pointer;
+  color: black;
+  font-size: 1.2em;
+}
+
+.project-content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  transition: color 0.3s ease;
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+.project-content h3 {
+  margin: 0 0 10px;
+  font-style: normal;
+}
+
+.project-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+  opacity: 0.3;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+  
+}
+
+.project-tile:hover .project-img {
+  opacity: 1;
+  font-style: normal;
+}
+
+.project-tile:hover .project-content {
+  color: rgb(255, 255, 255);
+  text-shadow: 0 1px 4px rgba(0,0,0,0.8);
+  font-size: 1.5em;
+  transform: translateY(10px);
+  transition: transform 0.5s ease;
+
+}
+
+/* Kontaktbereich */
+#contact {
+  padding: 40px 20px;
+  text-align: center;
+  }
+
+/* Profillink */
+#profile-link{
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg,rgb(83, 83, 83), rgb(39, 39, 39));
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+}
+
+#profile-link:hover{
+color: rgb(0, 162, 255);
+}
+
+footer{
+  color: white;
+  margin: 1%;
+}
+@media (max-width: 800px) {
+  .project-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
