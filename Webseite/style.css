@@ -160,14 +160,14 @@ main {
   max-width: 720px;
   max-height: 1280px;
   border-radius: 8px;
-  border: 0;
-  aspect-radio: 16/9;
+  margin-bottom: 10rem;
+  
 
 }
 
 /* Kontakt / Newsletter */
 .contact {
-  margin: 0 auto;
+  margin: 5rem auto;
   padding: 60px, 20px;
   text-align: center;
    width: 100%;
