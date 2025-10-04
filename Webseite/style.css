@@ -25,10 +25,14 @@ body {
   z-index: 100;
 }
 
-#header-img {
+#logo {
   height: 40px;                
 }
 
+#logo:hover{
+ transform: translateY(-5px);
+transition: transform 0.3s ease;
+}
 .nav-link {
   color: black;
   text-decoration: none;
