@@ -29,10 +29,6 @@ body {
   height: 40px;                
 }
 
-#logo:hover{
- transform: translateY(-5px);
-transition: transform 0.3s ease;
-}
 .nav-link {
   color: black;
   text-decoration: none;
@@ -157,6 +153,7 @@ main {
   max-width: 720px;
   border-radius: 8px;
   border: 0;
+  aspect-radio: 16/9;
 
 }
 
