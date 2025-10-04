@@ -87,8 +87,9 @@ main {
   position: relative;
   z-index: 2;
 }
-.feature h3 {
+.feature h2 h3 {
   margin-top: 0;
+  text-align: center;
 }
 .price {
   font-weight: 800;
@@ -151,7 +152,7 @@ main {
 #video {
   width: 100%;
   max-width: 720px;
-  aspect-ratio: 16 / 9;   /* responsive statt fester Höhe */
+  aspect-ratio: 16 / 9;
   border-radius: 8px;
   border: 0;
 
